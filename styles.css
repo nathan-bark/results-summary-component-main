@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,14 +8,13 @@ body {
 }
 
 html {
-    font-size: 62.5%; /* set to 10px for easy rem later */
+  font-size: 62.5%; /* set to 10px for easy rem later */
 }
-    
 
 .score-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 35.6rem;
@@ -31,14 +30,19 @@ h2 {
 }
 
 h1 {
-    font-size: 5.6rem;
-    
+  font-size: 5.6rem;
+}
+
+.score-box-percentile h2 {
+  font-size: 2.4rem;
+  height: 3.1rem;
+  margin-bottom: 0.8rem;
 }
 
 .score-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   border-radius: 50%;
   width: 14rem;
@@ -49,4 +53,98 @@ h1 {
     rgba(37, 33, 201, 0) 100%,
     rgba(37, 33, 201, 0) 100%
   );
+  
 }
+
+.score-box-sub {
+  font-size: 1.6rem;
+}
+
+.score-box-title {
+  font-size: 1.8rem;
+}
+
+.score-box-percentile {
+  text-align: center;
+  width: 26rem;
+}
+
+.score-box-percentile p {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.score-details {
+  margin: 2.4rem 3rem 2.4rem 3rem;
+}
+
+.score-details h2 {
+  font-size: 1.8rem;
+  color: #303B59;
+  margin-left: 0.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.score-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.7rem 1.6rem 1.8rem 1.6rem;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.score-numbers {
+  margin-right: 0px;
+  margin-left: auto;
+  font-weight: 700;
+  color: rgba(48, 59, 89, 0.5);
+  
+}
+
+.score-numbers > span {
+  
+  color: rgba(48, 59, 89, 1);
+}
+
+
+.reaction {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+}
+
+.category-title {
+  margin-left: 1.2rem;
+}
+
+.reaction .category-title {
+ color: #FF5555;
+}
+
+.memory {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+}
+
+.memory .category-title {
+  color: rgba(255, 178, 30, 1);
+}
+
+.verbal {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+}
+
+.verbal .category-title {
+  color: rgba(0, 187, 143, 1);
+}
+
+.visual {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+}
+
+.visual .category-title {
+  color: rgba(17, 37, 214, 1);
+}
+
+
