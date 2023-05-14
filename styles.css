@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Hanken-Medium';
+  src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hanken-Bold';
+  src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Hanken-Extra-Bold';
+  src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +20,7 @@
 
 body {
   margin: 0;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Hanken-Medium', sans-serif;
 }
 
 html {
@@ -32,6 +47,12 @@ h2 {
 
 h1 {
   font-size: 5.6rem;
+  font-family: 'Hanken-Extra-Bold', sans-serif;
+  
+}
+
+h2 {
+  font-family: 'Hanken-Bold', sans-serif;
 }
 
 .score-box-percentile h2 {
@@ -58,10 +79,12 @@ h1 {
 }
 
 .score-box-sub {
+  font-family: 'Hanken-Bold', sans-serif;
   font-size: 1.6rem;
 }
 
 .score-box-title {
+  font-family: 'Hanken-Bold', sans-serif;
   font-size: 1.8rem;
 }
 
@@ -71,9 +94,9 @@ h1 {
 }
 
 .score-box-percentile p {
+  font-family: 'Hanken-Medium', serif;
   font-size: 1.6rem;
   line-height: 2.1rem;
-  font-style: normal;
 }
 
 .score-details {
@@ -95,20 +118,18 @@ h1 {
   padding: 1.7rem 1.6rem 1.8rem 1.6rem;
   border-radius: 12px;
   font-size: 1.6rem;
-  font-weight: normal;
   margin-bottom: 1.6rem;
 }
 
 .score-numbers {
+  font-family: 'Hanken-Bold', sans-serif;
   margin-right: 0px;
   margin-left: auto;
-  font-weight: 700;
   color: rgba(48, 59, 89, 0.5);
   
 }
 
 .score-numbers > span {
-  
   color: rgba(48, 59, 89, 1);
 }
 
@@ -119,6 +140,7 @@ h1 {
 
 .category-title {
   margin-left: 1.2rem;
+  font-family: 'Hanken-Medium', serif;
 }
 
 .reaction .category-title {
@@ -150,8 +172,8 @@ h1 {
 }
 
 button {
+  font-family: 'Hanken-Bold', sans-serif;
   font-size: 1.8rem;
-  font-weight: 700;
   color: rgba(255, 255, 255, 1);
   line-height: 2.3rem;
   text-align: center;
@@ -172,6 +194,7 @@ button {
     width: 736px;
     height: 512px;
     overflow: hidden;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   .score-header {
@@ -188,6 +211,26 @@ button {
     width: 20rem;
     height: 20rem;
   }
+
+  .score-box-sub{
+    font-size: 1.8rem;
+  }
+
+  .score-box-title {
+    font-size: 2.4rem;
+  }
+
+  .score-box-percentile h2 {
+    font-size: 3.2rem;
+    height: 4.2rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .score-box-percentile p {
+    font-size: 1.8rem;
+    line-height: 2.345rem;
+  }
+
   .score-details {
     height: 100%;
     width: 50%;
@@ -196,16 +239,29 @@ button {
     justify-content: center;
   }
 
+  .score-details h2 {
+    font-size: 2.4rem;
+  }
+
+  .score-category {
+    font-size: 1.8rem;
+  }
+
+  .visual.score-category {
+    margin-bottom: 4.1rem;
+  }
+
   main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     height: 100vh;
   }
 
-  body {
-    background-color: #cac9ff;
+  button:hover {
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    /* filter: drop-shadow(0px 30px 60px rgba(61, 108, 236, 0.15)); */
+    cursor: pointer;
   }
   
 }
